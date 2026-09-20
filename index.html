@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Eastern Maring Business & Traders Association (EMBTA) - Demo Website">
+<title>EMBTA | Eastern Maring Business & Traders Association</title>
+<style>
+:root{--navy:#0b1f3a;--blue:#123f73;--gold:#d9a441;--cream:#f7f3ea;--white:#fff;--text:#243244;--muted:#64748b;--line:#e5e7eb}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.top{background:var(--navy);color:#dbeafe;font-size:13px;padding:8px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}.mark{width:48px;height:48px;border:3px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--navy);font-weight:900;font-size:14px;position:relative}.mark:after{content:"";position:absolute;inset:5px;border:1px solid var(--gold);border-radius:50%}.brand strong{display:block;color:var(--navy);font-size:17px}.brand span{display:block;color:var(--muted);font-size:11px}
+nav{display:flex;align-items:center;gap:22px}nav a{font-weight:650;font-size:14px;color:#334155}nav a:hover{color:var(--blue)}.menu{display:none;background:none;border:0;font-size:28px}
+.hero{background:linear-gradient(120deg,#071a31 0%,#123f73 60%,#1b5a86 100%);color:white;padding:88px 20px 76px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(217,164,65,.28);border-radius:50%;right:-150px;top:-180px}.hero-inner{max-width:1180px;margin:auto;position:relative}.eyebrow{color:#f4cf78;text-transform:uppercase;letter-spacing:2px;font-weight:800;font-size:12px}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.03;margin:14px 0;max-width:850px}.hero p{max-width:700px;font-size:18px;color:#dbeafe}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:12px 20px;border-radius:8px;font-weight:750;border:1px solid transparent;display:inline-block}.primary{background:var(--gold);color:#172033}.secondary{border-color:#94a3b8;color:#fff}
+section{padding:74px 20px}.wrap{max-width:1180px;margin:auto}.section-head{text-align:center;max-width:700px;margin:0 auto 40px}.section-head h2{font-size:34px;color:var(--navy);margin:0 0 10px}.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:26px;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 8px 30px rgba(15,23,42,.05)}.card h3{color:var(--navy);margin:12px 0 8px}.icon{width:44px;height:44px;border-radius:10px;background:#edf4fb;color:var(--blue);display:grid;place-items:center;font-weight:900}
+.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}.about h2{font-size:38px;color:var(--navy)}.points{display:grid;gap:13px;margin-top:22px}.point{display:flex;gap:12px}.check{color:#b17b18;font-weight:900}
+.stats{background:var(--navy);color:#fff}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}.stat strong{font-size:38px;color:#f4cf78;display:block}.stat span{color:#cbd5e1}
+.vehicles{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.vehicle{padding:22px 10px;text-align:center;border:1px solid var(--line);border-radius:12px;background:#fff;font-weight:750;color:var(--navy)}.vehicle b{font-size:28px;display:block;margin-bottom:8px}
+.notice{background:#eff6ff;border-left:4px solid var(--gold);padding:18px;border-radius:8px;margin-top:20px}
+.contact{background:#f8fafc}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px}.contact-row{margin:15px 0}.contact-row small{color:var(--muted);display:block}.contact-row strong{color:var(--navy)}
+footer{background:#071525;color:#cbd5e1;padding:38px 20px}.footer-grid{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer-brand{color:#fff;font-weight:800;font-size:20px}.copyright{border-top:1px solid #1e293b;margin-top:28px;padding-top:18px;font-size:13px}
+@media(max-width:850px){nav{display:none;position:absolute;left:0;right:0;top:76px;background:white;padding:18px 20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.grid{grid-template-columns:1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:repeat(2,1fr)}.vehicles{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.top{display:none}.hero{padding-top:65px}.hero h1{font-size:42px}.stats-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="top"><span>Eastern Maring Business & Traders Association</span><span>Demo Website • 2026</span></div>
+<header><div class="nav">
+<a class="brand" href="#home"><div class="mark">EMBTA</div><div><strong>EMBTA</strong><span>Eastern Maring Business & Traders Association</span></div></a>
+<button class="menu" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#vehicles">Vehicles</a><a href="#notices">Notices</a><a href="#contact">Contact</a>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div class="eyebrow">Community • Business • Service</div>
+<h1>Eastern Maring Business & Traders Association</h1>
+<p>Connecting businesses, traders, vehicle owners and the community through organized services, information and responsible business development.</p>
+<div class="buttons"><a class="btn primary" href="#services">Explore Services</a><a class="btn secondary" href="#contact">Contact Desk</a></div>
+</div></section>
+<section id="about" class="about"><div class="wrap about-grid">
+<div><div class="eyebrow">About EMBTA</div><h2>Building a stronger business community.</h2><p>EMBTA is presented here as a modern association platform for members, traders and the wider community. This demo site is designed to make association information easy to find and ready for future online services.</p>
+<div class="points"><div class="point"><span class="check">✓</span><span>Member-focused information and communication</span></div><div class="point"><span class="check">✓</span><span>Business and trader support resources</span></div><div class="point"><span class="check">✓</span><span>Digital vehicle registration and identification services</span></div></div></div>
+<div class="card"><h3>Association Desk</h3><p>Use the website as the central public information point for notices, registration, documents, announcements, gallery updates and contact information.</p><div class="notice"><strong>Demo Notice</strong><br>This website is a demonstration version. Official association information can be added from the future admin/backend system.</div></div>
+</div></section>
+<section id="services"><div class="wrap"><div class="section-head"><h2>Our Services</h2><p>A foundation for the association's future digital services.</p></div>
+<div class="grid"><div class="card"><div class="icon">01</div><h3>Member Services</h3><p>Member information, registration support, announcements and association communications.</p></div>
+<div class="card"><div class="icon">02</div><h3>Vehicle Registration</h3><p>Digital vehicle enrollment, registration IDs, QR identification and printable documents.</p></div>
+<div class="card"><div class="icon">03</div><h3>Documents</h3><p>Access forms, notices, certificates, undertakings and other association documents.</p></div>
+<div class="card"><div class="icon">04</div><h3>Business Support</h3><p>Information and resources supporting local businesses, traders and operators.</p></div>
+<div class="card"><div class="icon">05</div><h3>Announcements</h3><p>Publish association updates, meetings, programs and important public notices.</p></div>
+<div class="card"><div class="icon">06</div><h3>Media & Gallery</h3><p>Showcase association activities through photos, videos and event highlights.</p></div></div>
+</div></section>
+<section id="vehicles" class="about"><div class="wrap"><div class="section-head"><h2>Vehicle Registration</h2><p>Demo vehicle categories supported by the EMBTA registration platform.</p></div>
+<div class="vehicles"><div class="vehicle"><b>JCB</b>Heavy Equipment</div><div class="vehicle"><b>TATA</b>Commercial Vehicle</div><div class="vehicle"><b>DI-L</b>Agricultural / Utility</div><div class="vehicle"><b>Bolero</b>Pickup / Yodha</div><div class="vehicle"><b>Shaktiman</b>Agricultural</div></div>
+<div style="text-align:center;margin-top:28px"><a class="btn primary" href="#contact">Registration Desk</a></div></div></section>
+<section class="stats"><div class="wrap stats-grid"><div class="stat"><strong>2026</strong><span>Current Demo Year</span></div><div class="stat"><strong>05</strong><span>Vehicle Categories</span></div><div class="stat"><strong>24/7</strong><span>Website Access</span></div><div class="stat"><strong>QR</strong><span>Digital Identification</span></div></div></section>
+<section id="notices"><div class="wrap"><div class="section-head"><h2>Notices & Updates</h2><p>Sample public notices for the demo portal.</p></div>
+<div class="grid"><div class="card"><h3>Association Website Launch</h3><p>A new digital platform is being prepared to improve access to association information and services.</p><small>September 2026</small></div><div class="card"><h3>Vehicle Registration</h3><p>Vehicle owners and operators can use the future digital registration desk for enrollment and QR identification.</p><small>September 2026</small></div><div class="card"><h3>Member Information</h3><p>Membership and business information modules can be connected to the association's backend system.</p><small>Demo Update</small></div></div></div></section>
+<section id="contact" class="contact"><div class="wrap"><div class="section-head"><h2>Contact Desk</h2><p>Official contact details can be updated through the future admin panel.</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>EMBTA Office</h3><div class="contact-row"><small>Organization</small><strong>Eastern Maring Business & Traders Association</strong></div><div class="contact-row"><small>Location</small><strong>Manipur, India</strong></div><div class="contact-row"><small>Office Hours</small><strong>Monday – Saturday • 9:00 AM – 5:00 PM</strong></div></div>
+<div class="contact-card"><h3>Quick Contact</h3><div class="contact-row"><small>Email</small><strong>Official email can be added here</strong></div><div class="contact-row"><small>Phone</small><strong>Official phone number can be added here</strong></div><div class="contact-row"><small>Website</small><strong>EMBTA Digital Portal</strong></div></div></div></div></section>
+</main>
+<footer><div class="footer-grid"><div><div class="footer-brand">EMBTA</div><div>Eastern Maring Business & Traders Association</div></div><div>Business • Community • Service</div></div><div class="wrap copyright">© 2026 EMBTA. Demo website. All rights reserved.</div></footer>
+<script>document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));</script>
+</body>
+</html>
