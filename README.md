@@ -21,3 +21,5 @@ Then visit `http://localhost:8000`.
 
 ## GitHub Pages
 The repository includes a GitHub Actions workflow for deploying the static website to GitHub Pages.
+
+Deployment trigger refreshed on 20 September 2026.
